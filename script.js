@@ -53,5 +53,23 @@ function playGame() {
   }
 }
 
+const result = document.querySelector("#result");
+
 choices = ["Rock", "Paper", "Scissors"];
-playGame();
+
+document.querySelector("#rock").addEventListener("click", function(e){
+  const computerChoice = getComputerChoice(choices)
+  document.querySelector("#computerChoice").innerHTML = computerChoice;
+  result.innerHTML = playRound("rock", computerChoice);
+})
+document.querySelector("#paper").addEventListener("click", function(e){
+  const computerChoice = getComputerChoice(choices)
+  document.querySelector("#computerChoice").innerHTML = computerChoice;
+  result.innerHTML = playRound("paper", computerChoice)
+})
+document.querySelector("#scissors").addEventListener("click", function(e){
+  const computerChoice = getComputerChoice(choices)
+  document.querySelector("#computerChoice").innerHTML = computerChoice;
+  result.innerHTML = playRound("scissors", computerChoice)
+})
+// playGame();

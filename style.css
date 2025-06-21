@@ -1,0 +1,42 @@
+body {
+  margin: auto;
+  width: 80%;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+#result {
+    border: 2px solid rgba(128, 0, 128, 0.5);
+    padding: 32px;
+    border-radius: 18px;
+    min-width: 450px;
+    background-color: rgba(137, 43, 226, 0.5);
+}
+
+#computer {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    border: 2px solid rgba(128, 0, 128, 0.5);
+    padding: 0 32px;
+    border-radius: 18px;
+    min-width: 450px;
+    background-color: rgba(137, 43, 226, 0.5);
+}
+
+button {
+    padding: 12px;
+    border-radius: 12px;
+    background-color: blueviolet;
+    cursor: pointer;
+    color: white;
+}
+
+button:hover {
+    background-color: rgb(150, 47, 247);
+}
